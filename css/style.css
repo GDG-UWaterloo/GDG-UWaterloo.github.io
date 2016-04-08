@@ -8,8 +8,7 @@ body {
 
 /* Initial menu */
 .menu {
-
-  background: #202024 url('./images/black_thread.png') repeat left top;
+  background: #202024 url('../img/black-thread.png') repeat left top;
   left: -285px;  /* start off behind the scenes */
   height: 100%;
   position: fixed;
@@ -19,7 +18,7 @@ body {
 /* Basic styling */
 
 .jumbotron {
-  background-image: url('./images/background.jpg');
+  background-image: url('../img/background.jpg');
   height: 100%;
   -webkit-background-size: cover;
      -moz-background-size: cover;
