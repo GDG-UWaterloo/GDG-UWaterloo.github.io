@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-CA">
+<html lang="en-CA" ng-app="GDG_UW">
   <head>
     <meta charset="UTF-8">
     <title>Google Developer Groups, University of Waterloo</title>
@@ -31,34 +31,19 @@
 
     <!-- GOOGLE WEB FONTS INCLUDE -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+   
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css"  type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="app.js"></script>
   </head>
 
+<body>
 
-  <body>
-    <div class="menu">
-      <!-- Menu icon -->
-      <div class="icon-close">
-        <!-- <img src="img/background.jpg"> -->
-      </div>
-      <!-- Menu -->
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <!-- Main body -->
-    <div class="jumbotron">
-      <div class="icon-menu">
-        <i class="fa fa-bars"></i>
-        Menu
-      </div>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="javascript/app.js"></script>
-    </body>
-  </html>
+  <div ng-view></div>
+
+</body>
+</html>
