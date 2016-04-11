@@ -1,24 +1,31 @@
+'use strict'
+
 angular.module('GDG_UW', ['ngRoute'], function($httpProvider) {
   // Use x-www-form-urlencoded Content-Type
   $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
 
   angular.module('GDG_UW')
-    .config(['$routeProvider', function ($routeProvider) {
+    .config(['$routeProvider', function ($routeProvider, $locationProvider) {
+      $locationProvider.html5Mode(false);
+
       $routeProvider
         .when('/', {
           controller: 'homeCtrl',
-          templateUrl: 'partials/home.html'
+          template: 'partials/home.html'
         })
         .when('/team', {
           controller: 'teamCtrl',
-          templateUrl: 'partials/team.html'
+          template: 'partials/team.html'
         })
         .when('/events', {
           controller: 'eventsCtrl',
-          templateUrl: 'partials/events.html'
+          template: 'partials/events.html'
         })
-        .other('*');
-        }]);
+        .otherwise({
+          redirectTo: '/'
+        })
+    }
+  ]);
 
   angular.module('GDG_UW')
     .controller('homeCtrl', ['$scope',
