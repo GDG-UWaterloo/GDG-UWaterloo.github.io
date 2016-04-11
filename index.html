@@ -1,36 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 
-  </head>
-  <body>
 
-    <div class="menu">
+</head>
+<body ng-app="GDG_UW">
 
-      <!-- Menu icon -->
-      <div class="icon-close">
-        <img src="./images/background.jpg">
-      </div>
+   <ng-view></ng-view>
 
-      <!-- Menu -->
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Main body -->
-    <div class="jumbotron">
-
-      <div class="icon-menu">
-        <i class="fa fa-bars"></i>
-        Menu
-      </div>
-
-    <script src="./jasonscript/app.js"></script>
-  </body>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>

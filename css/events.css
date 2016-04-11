@@ -1,0 +1,6 @@
+@font-face { font-family: noto; src: url('fonts/Noto_Sans/NotoSans-Regular.ttf'); }
+@font-face { font-family: noto; font-weight: bold; src: url('fonts/Noto_Sans/NotoSans-Bold.ttf');}
+
+body {
+  background: #F8F8F8;
+}
