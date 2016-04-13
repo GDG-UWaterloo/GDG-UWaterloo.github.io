@@ -1,48 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-CA" ng-app="GDG_UW">
-  <head>
-    <meta charset="UTF-8">
-    <title>Google Developer Groups, University of Waterloo</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Developer Groups, University of Waterloo</title>
 
-    <!-- Behavioral Meta Data -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, intial-scale=1, maxium-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="img/icons/GDG.png" type="image/png">
+        <!-- Behavioral Meta Data -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, intial-scale=1, maxium-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="img/icons/GDG.png" type="image/png">
 
-    <!-- Core Meta Data -->
-    <meta name="author" content="GDG University of Waterloo">
-    <meta name="description" content="Google Developers Group at University of Waterloo">
-    <meta name="keywords" content="GDG, University of Waterloo, UW, mechatronics, engineering, android, google, design, java, software, developer">
+        <!-- Core Meta Data -->
+        <meta name="author" content="GDG University of Waterloo">
+        <meta name="description" content="Google Developers Group at University of Waterloo">
+        <meta name="keywords" content="GDG, University of Waterloo, UW, mechatronics, engineering, android, google, design, java, software, developer">
 
-    <!-- Open Graph Meta Data -->
-    <meta name="og:url" content="http://gdg-uwaterloo.github.io">
-    <meta name="og:type" content="website">
-    <meta name="og:site_name" content="gdg-uwaterloo">
-    <meta name="og:image" content="img/icons/GDG-Waterloo.png">
-    <meta name="og:title" content="GDG University of Waterloo">
-    <meta name="og:description" content="Google Developers Group at University of Waterloo">
+        <!-- Open Graph Meta Data -->
+        <meta name="og:url" content="http://gdg-uwaterloo.github.io">
+        <meta name="og:type" content="website">
+        <meta name="og:site_name" content="gdg-uwaterloo">
+        <meta name="og:image" content="img/icons/GDG-Waterloo.png">
+        <meta name="og:title" content="GDG University of Waterloo">
+        <meta name="og:description" content="Google Developers Group at University of Waterloo">
 
-    <!-- Twitter Graph Meta Data -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="http://gdg-uwaterloo.github.io">
-    <meta name="twitter:title" content="GDG University of Waterloo">
-    <meta name="twitter:description" content="Google Developers Group at University of Waterloo">
-    <meta name="twitter:image" content="img/icons/GDG-Waterloo.png">
+        <!-- Twitter Graph Meta Data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:url" content="http://gdg-uwaterloo.github.io">
+        <meta name="twitter:title" content="GDG University of Waterloo">
+        <meta name="twitter:description" content="Google Developers Group at University of Waterloo">
+        <meta name="twitter:image" content="img/icons/GDG-Waterloo.png">
 
-    <!-- GOOGLE WEB FONTS INCLUDE -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+        <!-- GOOGLE WEB FONTS INCLUDE -->
+<!--         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'> -->
 
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-    <script src="app.js"></script>
-  </head>
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./bower_components/Materialize/dist/css/materialize.min.css"  media="screen,projection"/> -->
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/events.css">
+        <link rel="stylesheet" type="text/css" href="./css/home.css">
+        <link rel="stylesheet" type="text/css" href="./css/team.css">
+<!--         <script src="./bower_components/angular/angular.min.js"></script>
+        <script src="./bower_components/angular-route/angular-route.min.js"></script> -->
+    </head>
 
-<body>
+    <body>
 
-  <div ng-view></div>
+        <!-- Obtain latest version of jquery from CDN -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <!-- jQuery must be imported before materialize -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.js"></script>
+        <script src="./app.js"></script>
 
-</body>
+        <!-- jQuery is required by Materialize to function -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="./bower_components/Materialize/dist/js/materialize.min.js"></script>
+
+
+        <div class="navbar-fixed">
+        <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-activates="mobile-view" class="button-collapse"> <i class="mdi-navigation-menu"></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="partials/home.html">Home</a></li>
+            <li><a href="partials/team.html">Team</a></li>
+            <li><a href="partials/events.html">Events</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-view">
+            <li><a href="#!/partials/home.html">Home</a></li>
+            <li><a href="#!/partials/team.html">Team</a></li>
+            <li><a href="#!/partials/events.html">Events</a></li>
+          </ul>
+        </div>
+        </nav>
+        </div>
+
+        <div ng-view></div>
+
+    </body>
+
 </html>
