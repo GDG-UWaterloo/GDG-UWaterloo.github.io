@@ -1,11 +1,4 @@
 'use strict'
-$(document).ready(function(){
-        // $("[data-activates=mobile-view]").sideNav();
-        $(".button-collapse").sideNav({menuWidth: 300});
-        // $('.parallax').parallax();
-        // $(".dropdown-button").dropdown({
-        //     hover: false
-        });
 
 var myApp = angular.module('GDG_UW', ['ngRoute'], function ($locationProvider) {
   // // Removes hash in url but cannot be used with Github Pages
@@ -38,6 +31,6 @@ myApp.controller('homeCtrl', ['$scope', function ($scope) {
 myApp.controller('teamCtrl', ['$scope', function ($scope) {
 
 }])
-myApp.controller('eventsCtrl', ['$scope', function ($scope) {
+myApp.controller('eventsCtrl', ['$scope','$location', function ($scope, $location) {
 
 }])
