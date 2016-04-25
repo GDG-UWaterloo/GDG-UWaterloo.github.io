@@ -95,8 +95,8 @@
   overflow-x: hidden;
   padding: 0px !important;
   border-bottom: 1px solid rgba(160,160,160,0.2);
-  -webkit-transition: border-bottom 0.5s; /* Safari */
-  transition: border-bottom 0.5s; /* Safari */
+  -webkit-transition: border-bottom 0.2s; /* Safari */
+  transition: border-bottom 0.2s; /* Safari */
 }
 
 .event:hover {
