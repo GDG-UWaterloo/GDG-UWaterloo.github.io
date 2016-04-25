@@ -1,14 +1,7 @@
 'use strict'
-$(document).ready(function(){
-        // $("[data-activates=mobile-view]").sideNav();
-        $(".button-collapse").sideNav({menuWidth: 300});
-        // $('.parallax').parallax();
-        // $(".dropdown-button").dropdown({
-        //     hover: false
-        });
 
 var myApp = angular.module('GDG_UW', ['ngRoute'], function ($locationProvider) {
-  // // Removes hash in url but cannot be used with Github Pages
+  // Removes hash in url but cannot be used with Github Pages
   // $locationProvider.html5Mode(true);
 });
 
