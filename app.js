@@ -66,5 +66,18 @@ myApp.controller('teamCtrl', ['$scope', function ($scope) {
 
 }])
 myApp.controller('eventsCtrl', ['$scope','$location', function ($scope, $location) {
+  $scope.eventList = [
+    {
+      month : 'July',
+      day : '09',
+      events: [
+        {
+          name : 'Prod Hacks',
+          image : './img/events/prodhacks.jpg',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        }
+      ]
+    }
+  ];
 
 }])
