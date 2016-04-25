@@ -53,20 +53,22 @@
 
 <body>
 
-  <div class='navbar-fixed unselectable'>
+  <div class='navbar-fixed unselectable' ng-controller='commonCtrl'>
+    <!-- TODO: have to make navbar respond on thinner screens -->
     <nav>
       <div class='nav-wrapper'>
-        <a ng-click='changeView("/")' class="brand-logo">Logo</a>
-        <ul id='nav-mobile' class='right med-and-down'>
-          <li><a href='#/'>Home</a></li>
-          <li><a href='#/team'>Team</a></li>
+        <a ng-click='changeView(0)' class="brand-logo"><img src='img/icons/GDG-Waterloo.png'></img></a>
+        <ul id='nav-mobile' class='right'>
+          <li ng-class='selection[0]'><a ng-click='changeView(0)'>Home</a></li>
+          <li ng-class='selection[1]'><a ng-click='changeView(1)'>Team</a></li>
           <li><a href='http://daisythecurlycat.blogspot.com/'>Blog</a></li>
-          <li><a href='#/events'>Events</a></li>
+          <li ng-class='selection[2]'><a ng-click='changeView(2)'>Events</a></li>
         </ul>
       </div>
     </nav>
   </div>
 
+  <!-- Includes page view -->
   <div ng-view></div>
 
 </body>

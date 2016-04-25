@@ -19,3 +19,28 @@ body {
   height: 100%;
   width: 100%;
 }
+
+nav {
+  background-color: #f8f8f8 !important;
+  padding-left: 2em;
+}
+
+nav img {
+  margin-top: 0.2em;
+  height: 1.6em;
+}
+
+nav ul a {
+  color: #4D4D4D !important;
+}
+
+nav ul li.active {
+  border-bottom: solid #3D94F4;
+  border-width: 4px;
+}
+
+nav ul li.active a {
+  background-color: #f8f8f8 !important;
+  color: #02A95A !important;
+
+}

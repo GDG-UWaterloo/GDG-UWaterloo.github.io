@@ -25,6 +25,40 @@ myApp.config(['$routeProvider', function ($routeProvider, $locationProvider) {
   }
 ]);
 
+myApp.controller('commonCtrl', ['$scope','$location', function ($scope, $location) {
+
+  $scope.selection = ['active', '', ''];
+
+  var currentLocation = $location.path();
+
+  if(currentLocation == '/team') {
+    $scope.selection = ['', 'active', ''];
+  }
+
+  if(currentLocation == '/events') {
+    $scope.selection = ['', '', 'active'];
+  }
+
+  $scope.changeView = function (viewIndex) {
+    switch (viewIndex) {
+      case 0:
+        $scope.selection = ['active', '', ''];
+        $location.path('/');
+        break;
+      case 1:
+        $scope.selection = ['', 'active', ''];
+        $location.path('/team');
+        break;
+      case 2:
+        $scope.selection = ['', '', 'active'];
+        $location.path('/events');
+        break;
+      default:
+        console.log('Error page does not exist');
+    }
+  }
+}])
+
 myApp.controller('homeCtrl', ['$scope', function ($scope) {
 
 }])
