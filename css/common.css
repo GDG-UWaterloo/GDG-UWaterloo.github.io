@@ -67,15 +67,10 @@ nav ul a {
   color: #4D4D4D !important;
 }
 
-nav ul li.active {
-  border-bottom: solid #3D94F4;
-  border-width: 2px;
-  -webkit-transition: border-bottom 0.2s; /* Safari */
-  transition: border-bottom 0.2s; /* Safari */
-}
-
 nav ul li.active a {
   background-color: #f8f8f8 !important;
   color: #02A95A !important;
-
+  box-shadow: 0px -2px 0px 0px #3D94F4 inset !important;
+  -webkit-transition: box-shadow 0.3s; /* Safari */
+  transition: box-shadow 0.3s; /* Safari */
 }
