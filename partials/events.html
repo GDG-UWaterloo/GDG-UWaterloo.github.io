@@ -11,7 +11,7 @@
       <div class='card'>
         <div class='row'>
           <div class='col s3 featuredEvent'>
-            <img src='img/events/Rectangleaas@2x.png'></img>
+            <img src='img/events/Rectangleaas@2x.png' class='unselectable'></img>
           </div>
           <div class='col s7 offset-s1 featuredEvent'>
             <div class="card-title">Featured GDG Event</div>
@@ -44,7 +44,7 @@
           </div>
           <div class='col s4 m3 l2 event' ng-repeat='event in date.events'>
             <a ng-href='go({{event.url}})'>
-              <img class='hackathonIcon' ng-src='{{event.image}}'></img>
+              <img class='hackathonIcon unselectable' ng-src='{{event.image}}'></img>
               <p>{{event.name}}</p>
             </a>
           </div>
@@ -60,7 +60,7 @@
       <div class='card'>
         <div class='row'>
           <div class='col s3 featuredEvent'>
-            <img src='img/events/Rectangle 214@2x.png'></img>
+            <img src='img/events/Rectangle 214@2x.png' class='unselectable'></img>
           </div>
           <div class='col s7 offset-s1 featuredEvent'>
             <div class="card-title">Other Club Event</div>

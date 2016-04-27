@@ -29,8 +29,7 @@ body {
 }
 
 .page-footer .cool-box {
-  bottom: 1.1em;
-  right: 1.1em;
+  margin-top: 0.1em;
   width: 1.8em;
   height: 1.8em;
   z-index: 91;
