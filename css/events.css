@@ -9,7 +9,7 @@
   padding-top: 2em;
   /*padding-left: 3em;*/
   width: 100%;
-  height: 16em;
+  height: 14em;
   background: #02A95A;
 }
 
@@ -18,7 +18,7 @@
   font-weight: bold;
   font-size: 3em;
   color: white;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* Geneeral card attrobutes */
@@ -44,14 +44,13 @@
 /* Featured events */
 .featuredEvent img {
   height: 100%;
-  overflow-x: hidden;
 }
 
 .featuredEvent {
   height: 16em;
   font-family: Open-Sans, sans-serif;
   color: #4D4D4D;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .featuredEvent .description {
@@ -113,5 +112,5 @@
 }
 
 .event a img {
-  max-width:100%;
+  height: 4em;
 }

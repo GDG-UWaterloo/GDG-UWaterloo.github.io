@@ -73,7 +73,33 @@ myApp.controller('eventsCtrl', ['$scope','$location', function ($scope, $locatio
       events: [
         {
           name : 'Prod Hacks',
-          image : './img/events/prodhacks.jpg',
+          image : './img/events/prodhacks.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        }
+      ]
+    },
+    {
+      month : 'April',
+      day : '25',
+      events: [
+        {
+          name : 'Prod Hacks',
+          image : './img/events/prodhacks.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Prod Hacks',
+          image : './img/events/prodhacks.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
           url : 'https://www.facebook.com/events/501109840081880/'
         }
       ]
