@@ -1,13 +1,42 @@
+@font-face { font-family: product-sans; font-weight: bold; src: url('../fonts/Product_Sans/ProductSans-Regular.ttf');}
+
 .parallax-container {
-  height: 400px;
+  height: 34em;
+  padding-top: 8em;
+  overflow-x: hidden;
 }
 
 .parallax img {
-  height: auto;
+  height: 100%;
 }
 
 .space {
   display: block;
   height: 200px;
   width: 100%;
+}
+
+.home-header {
+  height: 18em;
+  text-align: center;
+}
+
+.home-header img {
+  height: 7em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+.home-header h1 {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-family: product-sans, sans-serif;
+}
+
+.home-header .btn {
+  font-size: 1.1em;
+  background: #02A95A;
+  border-radius: 0.5em;
 }
