@@ -43,7 +43,7 @@
             <p class='dateMonth'>{{date.month}}</p>
           </div>
           <div class='col s4 m3 l2 event' ng-repeat='event in date.events'>
-            <a ng-href='go({{event.url}})'>
+            <a ng-href='{{event.url}}'>
               <img class='hackathonIcon unselectable' ng-src='{{event.image}}'></img>
               <p>{{event.name}}</p>
             </a>
@@ -74,7 +74,7 @@
         </div>
       </div>
     </div>
-    <div id='footer-spacer'></div>
+    <div class='footer-spacer'></div>
 
   </div>
 

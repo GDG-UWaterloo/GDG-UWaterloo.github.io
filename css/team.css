@@ -1,0 +1,23 @@
+@font-face { font-family: OpenSans; src: url('../fonts/Open_Sans/OpenSans-Light.ttf'); }
+
+.member-container {
+  padding: 1em !important;
+  height: 30em;
+  background: transparent;
+}
+
+.member-card {
+  background: white;
+  height: 100%;
+  width: 100%;
+  color: #4D4D4D;
+  font-family: OpenSans, sans-serif;
+}
+
+.member-photo {
+  width: 100%;
+}
+
+.member-info {
+  padding: 0em 1em 0em 1em !important;
+}
