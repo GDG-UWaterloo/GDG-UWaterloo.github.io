@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="en-CA" ng-app="GDG_UW">
-  <head>
-    <meta charset="UTF-8">
-    <title>Google Developer Groups, University of Waterloo</title>
 
-    <!-- Behavioral Meta Data -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, intial-scale=1, maxium-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="img/icons/GDG.png" type="image/png">
+<head>
+  <meta charset="UTF-8">
+  <title>GDG - University of Waterloo</title>
 
-    <!-- Core Meta Data -->
-    <meta name="author" content="GDG University of Waterloo">
-    <meta name="description" content="Google Developers Group at University of Waterloo">
-    <meta name="keywords" content="GDG, University of Waterloo, UW, mechatronics, engineering, android, google, design, java, software, developer">
+  <!-- Behavioral Meta Data -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0, maxium-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="img/icons/GDG.png" type="image/png">
 
-    <!-- Open Graph Meta Data -->
-    <meta name="og:url" content="http://gdg-uwaterloo.github.io">
-    <meta name="og:type" content="website">
-    <meta name="og:site_name" content="gdg-uwaterloo">
-    <meta name="og:image" content="img/icons/GDG-Waterloo.png">
-    <meta name="og:title" content="GDG University of Waterloo">
-    <meta name="og:description" content="Google Developers Group at University of Waterloo">
+  <!-- Core Meta Data -->
+  <meta name="author" content="GDG University of Waterloo">
+  <meta name="description" content="Google Developers Group at University of Waterloo">
+  <meta name="keywords" content="GDG, University of Waterloo, UW, mechatronics, engineering, android, google, design, java, software, developer">
 
-    <!-- Twitter Graph Meta Data -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:url" content="http://gdg-uwaterloo.github.io">
-    <meta name="twitter:title" content="GDG University of Waterloo">
-    <meta name="twitter:description" content="Google Developers Group at University of Waterloo">
-    <meta name="twitter:image" content="img/icons/GDG-Waterloo.png">
+  <!-- Open Graph Meta Data -->
+  <meta name="og:url" content="http://gdg-uwaterloo.github.io">
+  <meta name="og:type" content="website">
+  <meta name="og:site_name" content="gdg-uwaterloo">
+  <meta name="og:image" content="img/icons/GDG-Waterloo.png">
+  <meta name="og:title" content="GDG University of Waterloo">
+  <meta name="og:description" content="Google Developers Group at University of Waterloo">
 
-    <!-- GOOGLE WEB FONTS INCLUDE -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <!-- Twitter Graph Meta Data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://gdg-uwaterloo.github.io">
+  <meta name="twitter:title" content="GDG University of Waterloo">
+  <meta name="twitter:description" content="Google Developers Group at University of Waterloo">
+  <meta name="twitter:image" content="img/icons/GDG-Waterloo.png">
 
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-    <script src="app.js"></script>
-  </head>
+  <!-- Import Styles -->
+  <link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/events.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/team.css">
+
+  <!-- Angular JS -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+  <!--Import jQuery before materialize.js-->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+
+</head>
 
 <body>
 
+  <div class='navbar-fixed unselectable' ng-controller='commonCtrl'>
+    <!-- TODO: have to make navbar respond on thinner screens -->
+    <nav>
+      <div class='nav-wrapper'>
+        <a ng-click='changeView(0)' class="brand-logo"><img src='img/icons/GDG-Waterloo.png' class='unselectable'></img></a>
+        <ul id='nav-mobile' class='right'>
+          <li ng-class='selection[0]'><a ng-click='changeView(0)'>Home</a></li>
+          <li ng-class='selection[1]'><a ng-click='changeView(1)'>Team</a></li>
+          <li><a href='http://daisythecurlycat.blogspot.com/'>Blog</a></li>
+          <li ng-class='selection[2]'><a ng-click='changeView(2)'>Events</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Includes page view -->
   <div ng-view></div>
 
+  <!-- Footer -->
+  <footer class="page-footer">
+    <div class='row'>
+      <div class='col l4 m6 s12'>
+        <img src='img/icons/Google.png' class='unselectable'></img>
+      </div>
+      <div class='col l2 m3 s0 offset-l6 offset-m3 offset-s12'>
+        <div class='cool-box'></div>
+        <div class='cool-box'></div>
+        <div class='cool-box'></div>
+      </div>
+    </div>
+  </footer>
+
 </body>
+
 </html>
