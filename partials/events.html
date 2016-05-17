@@ -1,3 +1,81 @@
 <div ng-controller='eventsCtrl'>
-  HIHIHIHIHI
+
+  <div id='topContainer'>
+    <div class='container'>
+
+      <div id='eventsTitle' class='unselectable'>
+        Events Calendar
+      </div>
+
+      <!-- FEATURED EVENT -->
+      <div class='card'>
+        <div class='row'>
+          <div class='col s3 featuredEvent'>
+            <img src='img/events/Rectangleaas@2x.png' class='unselectable'></img>
+          </div>
+          <div class='col s7 offset-s1 featuredEvent'>
+            <div class="card-title">Featured GDG Event</div>
+            <p class='description'>
+              LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology.
+            </p>
+            <div class='card-action'>
+              <a class='unselectable' href='https://www.google.com'>Learn More ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- List of events -->
+      <div class='card mainEventList'>
+
+        <div class='row'>
+          <div class='col s12'>
+            <div class='card-title'>
+              Upcoming Hackathons
+            </div>
+          </div>
+        </div>
+
+        <div class='row' ng-repeat='date in eventList'>
+          <div class='col s4 m3 l2 date'>
+            <p class='dateNumber'>{{date.day}}</p>
+            <p class='dateMonth'>{{date.month}}</p>
+          </div>
+          <div class='col s4 m3 l2 event' ng-repeat='event in date.events'>
+            <a ng-href='go({{event.url}})'>
+              <img class='hackathonIcon unselectable' ng-src='{{event.image}}'></img>
+              <p>{{event.name}}</p>
+            </a>
+          </div>
+        </div>
+
+        <div class='card-action'>
+          <a class='unselectable' href='https://www.google.com'>Learn More ></a>
+        </div>
+
+      </div>
+
+      <!-- OTHER EVENT -->
+      <div class='card'>
+        <div class='row'>
+          <div class='col s3 featuredEvent'>
+            <img src='img/events/Rectangle 214@2x.png' class='unselectable'></img>
+          </div>
+          <div class='col s7 offset-s1 featuredEvent'>
+            <div class="card-title">Other Club Event</div>
+            <p class='description'>
+              LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology.
+            </p>
+            <div class='card-action'>
+              <a class='unselectable' href='https://www.google.com'>Learn More ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='footer-spacer'></div>
+
+  </div>
+
 </div>

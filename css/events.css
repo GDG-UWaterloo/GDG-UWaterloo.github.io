@@ -1,6 +1,116 @@
-@font-face { font-family: noto; src: url('fonts/Noto_Sans/NotoSans-Regular.ttf'); }
-@font-face { font-family: noto; font-weight: bold; src: url('fonts/Noto_Sans/NotoSans-Bold.ttf');}
+@font-face { font-family: Noto; src: url('../fonts/Noto_Sans/NotoSans-Regular.ttf'); }
+@font-face { font-family: Noto; font-weight: bold; src: url('../fonts/Noto_Sans/NotoSans-Bold.ttf');}
 
-body {
-  background: #F8F8F8;
+@font-face { font-family: Open-Sans; src: url('../fonts/Open_Sans/OpenSans-Regular.ttf'); }
+@font-face { font-family: Open-Sans; font-weight: bold; src: url('../fonts/Open_Sans/OpenSans-Bold.ttf'); }
+
+/* Main page attributes */
+#topContainer {
+  padding-top: 2em;
+  /*padding-left: 3em;*/
+  width: 100%;
+  height: 14em;
+  background: #02A95A;
+}
+
+#eventsTitle {
+  font-family: Noto, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 1em;
+}
+
+/* Geneeral card attrobutes */
+.card-title {
+  margin-top: 1em !important;
+  font-family: Open-Sans, sans-serif;
+  font-weight: bold !important;
+  color: #4D4D4D;
+}
+
+.card-action {
+  padding-top: 0.5em !important;
+}
+
+.card-action a {
+  color: #0099ff !important;
+}
+
+.card-action a:hover {
+  color: #80ccff !important;
+}
+
+/* Featured events */
+.featuredEvent img {
+  height: 100%;
+}
+
+.featuredEvent {
+  height: 16em;
+  font-family: Open-Sans, sans-serif;
+  color: #4D4D4D;
+  overflow: hidden;
+}
+
+.featuredEvent .description {
+  height: 5em;
+  overflow-y: scroll;
+}
+
+.material-icons {
+  width: 100%;
+}
+
+/* Bulk event listing attributes */
+.mainEventList {
+  padding: 1em 1em 1em 3em;
+}
+
+.date {
+  text-align: center;
+}
+
+.dateNumber {
+  font-size: 3em;
+  text-align: center;
+  color: #02A95A;
+  margin: 0px !important;
+}
+
+.dateMonth {
+  font-size: 1.5em;
+  text-align: center;
+  color: #02A95A;
+  margin-top: -0.8em !important;
+}
+
+.hackathonIcon {
+  height: 4em;
+}
+
+.event {
+  text-align: center;
+  overflow-x: hidden;
+  padding: 0px !important;
+  border-bottom: 1px solid rgba(160,160,160,0.2);
+  -webkit-transition: border-bottom 0.2s; /* Safari */
+  transition: border-bottom 0.2s; /* Safari */
+}
+
+.event:hover {
+  border-bottom: 1px solid #3D94F4;
+  -webkit-transition: border-bottom 0.2s; /* Safari */
+  transition: border-bottom 0.2s; /* Safari */
+}
+
+.event a {
+  display: block;
+  color: #4D4D4D;
+  font-family: Open-Sans, sans-serif;
+  font-weight: bold;
+}
+
+.event a img {
+  height: 4em;
 }

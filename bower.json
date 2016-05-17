@@ -13,6 +13,5 @@
     "angular": "~1.5.3",
     "angular-route": "~1.5.3",
     "Materialize": "materialize#~0.97.6",
-    "material-design-lite": "^1.1.3"
   }
 }
