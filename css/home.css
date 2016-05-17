@@ -6,10 +6,6 @@
   overflow-x: hidden;
 }
 
-.parallax img {
-  height: 100%;
-}
-
 .space {
   display: block;
   height: 200px;
