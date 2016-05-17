@@ -61,9 +61,18 @@ myApp.controller('commonCtrl', ['$scope','$location', function ($scope, $locatio
 
 myApp.controller('homeCtrl', ['$scope', function ($scope) {
 
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
 }])
 myApp.controller('teamCtrl', ['$scope', function ($scope) {
-
+  $scope.team = [
+    {
+      name : 'Allan',
+      photo : 'img/team/Allan.png'
+    }
+  ];
 }])
 myApp.controller('eventsCtrl', ['$scope','$location', function ($scope, $location) {
   $scope.eventList = [
@@ -80,6 +89,11 @@ myApp.controller('eventsCtrl', ['$scope','$location', function ($scope, $locatio
           name : 'Cisco DevNet',
           image : './img/events/devnet.png',
           url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Pavel hacks',
+          image : './img/team/Pavel.png',
+          url : 'https://google.com/search?q=pavel'
         }
       ]
     },

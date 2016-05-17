@@ -1,0 +1,13 @@
+.parallax-container {
+  height: 400px;
+}
+
+.parallax img {
+  height: auto;
+}
+
+.space {
+  display: block;
+  height: 200px;
+  width: 100%;
+}
