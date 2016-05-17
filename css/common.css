@@ -6,7 +6,7 @@ body {
   display: block;
 }
 
-#footer-spacer {
+.footer-spacer {
   height: 4em;
 }
 

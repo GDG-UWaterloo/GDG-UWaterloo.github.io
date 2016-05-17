@@ -1,0 +1,24 @@
+<div ng-controller='eventsCtrl'>
+
+  <div id='topContainer'>
+    <div class='container'>
+
+      <div id='eventsTitle' class='unselectable'>
+        The Team
+      </div>
+
+      <!-- FEATURED EVENT -->
+      <div class='row'>
+        <div ng-repeat='member in team' class='col s6 m4 l3 member-container'>
+          <div class='member-card card'>
+            <img class='member-photo' ng-src='{{member.photo}}'></img>
+            <div class='member-info'>
+              <h5>{{member.name}}</h5>              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class='footer-spacer'></div>
+  </div>
+</div>
