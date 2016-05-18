@@ -1,9 +1,9 @@
 @font-face { font-family: product-sans; font-weight: bold; src: url('../fonts/Product_Sans/ProductSans-Regular.ttf');}
+@font-face { font-family: open-sans-light; font-weight: bold; src: url('../fonts/Open_Sans/OpenSans-Light.ttf');}
 
-.parallax-container {
-  height: 34em;
-  padding-top: 8em;
-  overflow-x: hidden;
+#header {
+  height: 38em;
+  padding-top: 12em;
 }
 
 .space {
@@ -14,20 +14,19 @@
 
 .home-header {
   height: 18em;
-  text-align: center;
 }
 
 .home-header img {
   height: 7em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1em;
+  margin-bottom: -1em;
 }
 
 .home-header h1 {
   color: white;
   font-size: 2.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   font-family: product-sans, sans-serif;
 }
 
@@ -35,4 +34,68 @@
   font-size: 1.1em;
   background: #02A95A;
   border-radius: 0.5em;
+}
+
+.home-gray-container {
+  background: #F8F8F8;
+}
+
+.home-white-container .col {
+  background: #FFF;
+  height: 40em;
+  overflow-y: hidden;
+}
+
+.home-white-container img {
+  width: 100%;
+}
+
+.home-white-container h1 {
+  color: #696969;
+  font-size: 4em;
+  font-family: open-sans-light, sans-serif;
+  margin-bottom: -0.1em;
+  margin-top: 3em;
+}
+
+.home-gray-container h1 {
+  color: #696969;
+  font-size: 4em;
+  font-family: open-sans-light, sans-serif;
+  margin-bottom: -0.1em;
+}
+
+.home-white-container p,
+.home-gray-container p {
+  color: #696969;
+  font-size: 1.7em;
+  font-family: open-sans-light, sans-serif;
+}
+
+.home-gray-container-cards img {
+  height: 10em;
+}
+
+.home-gray-container-cards figcaption {
+  color: #696969;
+  font-size: 1.7em;
+  font-family: open-sans-light, sans-serif;
+  margin-bottom: 3em;
+}
+
+.home-warrior {
+  height: 25em;
+}
+
+.parallax img {
+  height: 130%;
+}
+
+.home-special-link {
+  font-size: 0.7em;
+  color: #9a9a9a;
+}
+
+@media (max-width: 500px) {
+  .home-white-container h1 { margin-top: 0em; }
 }
