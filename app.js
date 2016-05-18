@@ -69,8 +69,60 @@ myApp.controller('homeCtrl', ['$scope', function ($scope) {
 myApp.controller('teamCtrl', ['$scope', function ($scope) {
   $scope.team = [
     {
-      name : 'Allan',
-      photo : 'img/team/Allan.png'
+      name : 'Allan Luk',
+      photo : 'img/team/Allan.png',
+      position : 'President',
+      email : 'FILL IN',
+      program : 'Mechatronics Engineering'
+    },
+    {
+      name : 'Ron Glozman',
+      photo : 'img/team/Ron.png',
+      position : 'VP Internal',
+      email : 'FILL IN',
+      program : 'FILL IN'
+    },
+    {
+      name : 'Austin Cho-Wong',
+      photo : 'img/team/Austin.png',
+      position : 'VP External',
+      email : 'FILL IN',
+      program : 'FILL IN'
+    },
+    {
+      name : 'Qasim Ali',
+      photo : 'img/team/Qasim.png',
+      position : 'VP Communications',
+      email : 'FILL IN',
+      program : 'FILL IN'
+    },
+    {
+      name : 'Jessica Jiang',
+      photo : 'img/team/Jessica.png',
+      position : 'Secretary',
+      email : 'FILL IN',
+      program : 'FILL IN'
+    },
+    {
+      name : 'Pedja Ristic',
+      photo : 'img/team/Pedja.png',
+      position : 'UI/UX Designer',
+      email : 'FILL IN',
+      program : 'FILL IN'
+    },
+    {
+      name : 'Pavel Shering',
+      photo : 'img/team/Pavel.png',
+      position : 'VP Technology',
+      email : 'pshering@uwaterloo.ca',
+      program : 'Mechatronics Engineering'
+    },
+    {
+      name : 'Mihai Tiuca',
+      photo : 'img/team/Mihai.png',
+      position : 'VP Technology',
+      email : 'tmtiuca@uwaterloo.ca',
+      program : 'Mechatronics Engineering'
     }
   ];
 }])
