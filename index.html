@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-CA" ng-app="GDG_UW">
+<html class="no-js" lang="en-CA" ng-app="GDG_UW">
 
 <head>
+
+<style>
+  /* This only works with JavaScript,
+     if it's not present, don't show loader */
+  .no-js #loader { display: none;  }
+  .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+</style>
+
   <meta charset="UTF-8">
   <title>GDG - University of Waterloo</title>
 
@@ -50,9 +58,20 @@
   <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
   <script src="app.js"></script>
 
+  <script>
+		// Wait for window load
+		$(window).load(function() {
+			// Animate loader off screen
+			$("#loader").animate({
+				top: -200
+			}, 1500);
+		});
+	</script>
 </head>
 
 <body>
+
+  <img src="img/icons/GDG.png" id="loader">
 
   <div class='navbar-fixed unselectable' ng-controller='commonCtrl'>
     <!-- TODO: have to make navbar respond on thinner screens -->
