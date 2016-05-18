@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-CA" ng-app="GDG_UW">
+<html lang="en-CA" ng-app="GDG_UW">
 
 <head>
 
-<style>
-  /* This only works with JavaScript,
-     if it's not present, don't show loader */
-  .no-js #loader { display: none;  }
-  .js #loader { display: block; position: absolute; left: 100px; top: 0; }
-</style>
+  <style>
+    .preloader{
+      position: fixed;
+      top:0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      background: #fff;
+      z-index: 99999;
+    }
+
+    .preloader .preloader-gif{
+      display: block;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -100px 0 0 -100px;
+      background: url('img/icons/preloader2.gif') no-repeat;
+    }
+  </style>
 
   <meta charset="UTF-8">
   <title>GDG - University of Waterloo</title>
@@ -59,19 +75,19 @@
   <script src="app.js"></script>
 
   <script>
-		// Wait for window load
-		$(window).load(function() {
-			// Animate loader off screen
-			$("#loader").animate({
-				top: -200
-			}, 1500);
-		});
-	</script>
+    $(document).ready(function () {
+      // preloader
+      $(window).load(function(){
+        $('.preloader').delay(400).fadeOut(500);
+      })
+    })
+  </script>
+
 </head>
 
 <body>
 
-  <img src="img/icons/GDG.png" id="loader">
+  <div class="preloader"><span class="preloader-gif"></span></div>
 
   <div class='navbar-fixed unselectable' ng-controller='commonCtrl'>
     <!-- TODO: have to make navbar respond on thinner screens -->
@@ -104,9 +120,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="js/init.js"></script>
-
 
 </body>
 
