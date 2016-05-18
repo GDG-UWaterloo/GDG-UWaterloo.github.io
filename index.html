@@ -2,6 +2,30 @@
 <html lang="en-CA" ng-app="GDG_UW">
 
 <head>
+
+  <style>
+    .preloader{
+      position: fixed;
+      top:0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      background: #fff;
+      z-index: 99999;
+    }
+
+    .preloader .preloader-gif{
+      display: block;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -100px 0 0 -100px;
+      background: url('img/icons/preloader2.gif') no-repeat;
+    }
+  </style>
+
   <meta charset="UTF-8">
   <title>GDG - University of Waterloo</title>
 
@@ -50,9 +74,20 @@
   <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
   <script src="app.js"></script>
 
+  <script>
+    $(document).ready(function () {
+      // preloader
+      $(window).load(function(){
+        $('.preloader').delay(400).fadeOut(500);
+      })
+    })
+  </script>
+
 </head>
 
 <body>
+
+  <div class="preloader"><span class="preloader-gif"></span></div>
 
   <div class='navbar-fixed unselectable' ng-controller='commonCtrl'>
     <!-- TODO: have to make navbar respond on thinner screens -->
@@ -85,9 +120,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="js/init.js"></script>
-
 
 </body>
 
