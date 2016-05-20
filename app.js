@@ -1,7 +1,7 @@
 'use strict'
 
 var myApp = angular.module('GDG_UW', ['ngRoute'], function ($locationProvider) {
-  // // Removes hash in url but cannot be used with Github Pages
+  // Removes hash in url but cannot be used with Github Pages
   // $locationProvider.html5Mode(true);
 });
 
@@ -60,12 +60,34 @@ myApp.controller('commonCtrl', ['$scope','$location', function ($scope, $locatio
 }])
 
 myApp.controller('homeCtrl', ['$scope', function ($scope) {
-
   $(document).ready(function(){
     $('.parallax').parallax();
   });
 
+  $scope.posts = [
+    {
+      photo : './img/home/google-image.png',
+      caption : 'AdMob Student App Challenge',
+      summary : 'Win an all expense paid trip to San Francisco and tour the Googleplex ...'
+    },
+    {
+      photo : './img/home/google-image.png',
+      caption : 'Helping students build better apps',
+      summary : 'One million developers around the world have made a commitment to learn a new language ...'
+    },
+    {
+      photo : './img/home/google-image.png',
+      caption : 'Spatial audio comes to Cardboard SDK',
+      summary : 'We built today’s updates with performance in mind, so adding spatial audio to your app has minimal impact on the primary CPU ...'
+    },
+    {
+      photo : './img/home/google-image.png',
+      caption : 'Get your app featured in Project Tango',
+      summary : 'Lenovo announced the development of the first consumer-ready smartphone with Project Tango.'
+    }
+  ];
 }])
+
 myApp.controller('teamCtrl', ['$scope', function ($scope) {
   $scope.team = [
     {
@@ -125,7 +147,9 @@ myApp.controller('teamCtrl', ['$scope', function ($scope) {
       program : 'Mechatronics Engineering'
     }
   ];
+
 }])
+
 myApp.controller('eventsCtrl', ['$scope','$location', function ($scope, $location) {
   $scope.eventList = [
     {
