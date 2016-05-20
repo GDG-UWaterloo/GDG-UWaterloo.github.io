@@ -77,10 +77,27 @@ nav ul li.active a {
   background-color: #f8f8f8 !important;
   color: #02A95A !important;
   box-shadow: 0px -2px 0px 0px #3D94F4 inset !important;
-  -webkit-transition: box-shadow 0.3s; /* Safari */
+  -webkit-transition: box-shadow 0.3s; /* Chrome */
   transition: box-shadow 0.3s; /* Safari */
 }
 
 .centered {
   text-align:center;
 }
+
+.card {
+  -webkit-transition: box-shadow 0.1s; /* Chrome */
+  transition: box-shadow 0.1s; /* Safari */
+}
+
+.card:hover {
+  box-shadow: 0px 5px 15px 0px gray;
+  -webkit-transition: box-shadow 0.3s; /* Chrome */
+  transition: box-shadow 0.3s; /* Safari */
+}
+
+/*.card:active {
+  background: red;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}*/

@@ -49,7 +49,6 @@
   <div class='parallax-container unselectable home-warrior'>
     <div class='parallax'>
       <img src='../img/home/c007222_warrior_fans-1680x1050-wallpaper@2x.png'>
-      <!-- <img src='../img/home/c007222_warrior_fans-1680x1050-wallpaper.jpg'> -->
     </div>
   </div>
 
@@ -62,7 +61,7 @@
 
   <div class='row unselectable home-white-container'>
     <div class='col l5 m5 s12'>
-      <img src='../img/home/logos-white@2x.png' alt='strategy.png'>
+      <img src='../img/home/logos-white@2x.png' alt='logos-white.png'>
     </div>
 
     <div class='col l7 m7 s12'>
@@ -76,11 +75,38 @@
     </div>
   </div>
 
-  <div class='space'></div>
-  <div class='space'></div>
-  <div class='space'></div>
-  <div class='space'></div>
-  <div class='space'></div>
-  <div class='space'></div>
+  <div class='row unselectable'>
+    <div class='col l5 m5 s12 offset-m1 offset-l1 home-gray-container'>
+      <h1>Beginner to Expert</h1>
+      <p> GDG workshops mean anyone who is willing to learn is welcome. Regardless of what language you know, we don’t discriminate. From first-timer to codemaster.</p>
+    </div>
+    <div class='col l6 m6 s12 home-gray-container centered'>
+      <img src='../img/home/red@2x.png' alt='red.png'>
+      <img src='../img/home/yellow@2x.png' alt='red.png'>
+      <img src='../img/home/green@2x.png' alt='red.png'>
+      <img src='../img/home/blue@2x.png' alt='red.png'>
+    </div>
+  </div>
 
+  <div class='row unselectable blog-container'>
+    <div class='col s12 m12 l12'>
+      <div class='row'>
+        <div class='col l7 m10 s12 offset-l1 offset-m1'>
+          <h1>Latest Blog Posts</h1>
+        </div>
+      </div>
+      <div class='row blog'>
+        <div class='col l3 m4 s12 offset-m1' ng-repeat='blog in posts'>
+          <div class='card blog-post'>
+            <div class='centered'>
+              <img ng-src='{{blog.photo}}' alt='blog photo'>
+            </div>
+            <h5>{{blog.caption}}</h5>
+            <p>{{blog.summary}}</p>
+            <a class='unselectable blog' href='https://googleblog.blogspot.ca'>Read More ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
