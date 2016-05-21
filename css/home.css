@@ -174,4 +174,7 @@
   .blog-container h1 {
     margin-left: 0.4em;
   }
+  .blog-container p {
+    margin-bottom: 1em;
+  }
 }

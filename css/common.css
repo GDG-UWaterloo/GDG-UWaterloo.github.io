@@ -96,8 +96,6 @@ nav ul li.active a {
   transition: box-shadow 0.3s; /* Safari */
 }
 
-/*.card:active {
-  background: red;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
-}*/
+@media (max-width: 970 px) {
+
+}
