@@ -134,7 +134,8 @@ myApp.controller('teamCtrl', ['$scope', function ($scope) {
     },
     {
       name : 'Pavel Shering',
-      photo : 'img/team/Pavel.png',
+      // photo : 'img/team/Pavel.png',
+      photo : 'img/team/PavelS.jpg',
       position : 'VP Technology',
       email : 'pshering@uwaterloo.ca',
       program : 'Mechatronics Engineering'
