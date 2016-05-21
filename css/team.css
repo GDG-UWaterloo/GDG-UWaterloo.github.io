@@ -21,3 +21,12 @@
 .member-info {
   padding: 0em 1em 0em 1em !important;
 }
+
+.grad-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.member-info .row {
+  font-size: 0.8em;
+}

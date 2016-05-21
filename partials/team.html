@@ -13,7 +13,41 @@
           <div class='member-card card'>
             <img class='member-photo' ng-src='{{member.photo}}'></img>
             <div class='member-info'>
-              <h5>{{member.name}}</h5>              
+              <h5>{{member.name}}</h5>
+              <p>{{member.position}}</p>
+              <div class='row'>
+                <div class='col s2'>
+                  <i class="material-icons">email</i>
+                </div>
+                <div class='col s9'>
+                  {{member.email}}
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col s2'>
+                  <img src='../img/icons/grad-cap.png' class='grad-icon'>
+                </div>
+                <div class='col s9'>
+                  {{member.program}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='card'>
+        <div class='row'>
+          <div class='col s3 featuredEvent'>
+            <img src='../img/team/quantam-nano-centre.png' class='unselectable'></img>
+          </div>
+          <div class='col s7 offset-s1 featuredEvent'>
+            <div class="card-title">We would love to work with you</div>
+            <p class='description'>
+              Send us an email and we will get back to you as soon as applications are open for the GDG Waterloo team.
+            </p>
+            <div class='card-action'>
+              <a class='unselectable' href='https://www.google.com'>SHOOT US AN EMAIL></a>
             </div>
           </div>
         </div>
