@@ -3,7 +3,7 @@
 @font-face { font-family: open-sans-regular; font-weight: bold; src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');}
 
 #header {
-  height: 40em;
+  height: 100vh;
   padding-top: 12em;
 }
 
