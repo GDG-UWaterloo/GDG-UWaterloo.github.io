@@ -166,6 +166,61 @@ myApp.controller('eventsCtrl', ['$scope','$location', function ($scope, $locatio
           name : 'Cisco DevNet',
           image : './img/events/devnet.png',
           url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
+        },
+        {
+          name : 'Cisco DevNet',
+          image : './img/events/devnet.png',
+          url : 'https://www.facebook.com/events/501109840081880/'
         }
       ]
     },

@@ -6,6 +6,20 @@ body {
   display: block;
 }
 
+#bodyContainer {
+  display: none;
+}
+
+#gdganimationfulllogo_hype_container {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -300px;
+  overflow:hidden;
+}
+
 .footer-spacer {
   height: 4em;
 }
