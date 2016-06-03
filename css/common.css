@@ -4,6 +4,20 @@
 body {
   background: #F8F8F8;
   display: block;
+  -ms-overflow-style: none
+}
+
+::-scrollbar {
+  display: none;
+}
+::-o-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+::-moz-scrollbar {
+  display: none;
 }
 
 #bodyContainer {
