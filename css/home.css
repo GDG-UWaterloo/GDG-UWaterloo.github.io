@@ -7,19 +7,6 @@
   padding-top: 12em;
 }
 
-::-scrollbar {
-  display: none;
-}
-::-o-scrollbar {
-  display: none;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-::-moz-scrollbar {
-  display: none;
-}
-
 .home-header {
   height: 100%;
 }
