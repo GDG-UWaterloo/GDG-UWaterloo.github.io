@@ -18,10 +18,22 @@
   margin-bottom: -1em;
 }
 
+.home-header a {
+  visibility: hidden;
+  margin-top: 2.5em;
+}
+
 .home-header h1 {
   color: white;
   font-size: 2.5em;
-  margin-bottom: 1em;
+  margin-bottom: -0.5em;
+  font-family: product-sans, sans-serif;
+}
+
+.home-header h2 {
+  color: white;
+  font-size: 2.0em;
+  margin-bottom: -0.5em;
   font-family: product-sans, sans-serif;
 }
 
@@ -100,7 +112,7 @@
 
 .blog-container {
   background: #FFF;
-  padding-bottom: 6em;
+  /*padding-bottom: 6em;*/
 }
 
 .blog {
