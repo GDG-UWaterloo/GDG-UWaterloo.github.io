@@ -94,7 +94,7 @@ myApp.controller('teamCtrl', ['$scope', function ($scope) {
       name : 'Allan Luk',
       photo : 'img/team/Allan.png',
       position : 'President',
-      email : 'FILL IN',
+      email : 'allan@luk.com',
       program : 'Mechatronics Engineering'
     },
     {
